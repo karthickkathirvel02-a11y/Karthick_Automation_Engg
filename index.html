@@ -952,9 +952,22 @@ footer span { color:var(--accent); }
         <span class="modal-tag">Auto Shutdown</span>
       </div>
       <p class="modal-desc">
-        <strong>Objective:</strong> Automate generator startup on mains power failure with safety interlocks, HMI monitoring, and automatic shutdown on power restoration.<br><br>
+        <strong>Objective:</strong> Objective: Ensure uninterrupted power supply.<br><br>
+Initial Conditions<br><br>
+• Mains supply present<br<br>
+• Generator stopped<br><br>
+Abnormal Conditions<br><br>
+• Overspeed → trip<br><br>
+• Low oil pressure → shutdown<br><br>
+        • Electrical over load → trip <br><br>
+         • High Temperature → trip<br><br>
         <strong>Tools Used:</strong> Siemens PLC, relay logic, Auto Transfer Switch (ATS), voltage monitoring relay, HMI panel with alarm management.<br><br>
-        <strong>Working Logic:</strong> The PLC continuously monitors mains supply voltage. On power failure detection, a time-delay relay initiates the generator start sequence. Safety interlocks verify oil pressure, coolant temperature, and battery voltage before confirming startup. Once mains power is restored, a staged re-transfer sequence returns load to the mains and shuts down the generator after a cool-down delay.
+        <strong>Working Logic:</strong> Normal Operation Sequence<br><br>
+1. Mains failure detected<br><br>
+2. Generator starts after delay<br><br>
+3. Generator reaches rated speed<br><br>
+4. Load transferred<br><br>
+5. Mains restored → cool down → generator stops.
       </p>
       <div class="modal-actions">
         <a href="#contact" class="btn-modal-primary" onclick="closeModal('modal-proj-5')">▶ Contact for Details</a>
@@ -1273,11 +1286,10 @@ footer span { color:var(--accent); }
         Industrial Control Systems Specialist
       </div>
       <p class="hero-summary">
-        <strong>Electronics &amp; Instrumentation Engineering</strong> student with hands-on expertise in PLC programming, HMI development, and industrial automation.<br>
-        Proficient in <strong>Siemens TIA Portal, Delta ISP Soft, and Rockwell RS Logix</strong>.<br>
-        Experienced through 3 industrial internships at power generation, manufacturing, and electronics facilities. Actively seeking entry-level automation roles in the <strong>UAE market</strong>.
+        <strong>Electronics &amp; Instrumentation Engineering</strong> student with Electrical knowledge and hands-on experince in PLC programming, HMI development, and industrial automation.<br>
+        Proficient in <strong>Siemens TIA Portal, Delta ISP Soft, and Rockwell RS Logix</strong>. Actively seeking entry-level automation roles in the <strong>UAE market</strong>.
       </p>
-      <div class="hero-uae-badge">Open to Work — UAE 🇦🇪</div>
+      <div class="hero-uae-badge">Open to Work — UAE</div>
       <div class="hero-btns">
         <a href=KARTHICK K.pdf.pdf download class="btn btn-primary">⬇ Download Resume</a>
         <a href="#contact" class="btn btn-outline">Contact Me →</a>
@@ -1357,11 +1369,8 @@ footer span { color:var(--accent); }
         </div>
       </div>
       <div class="about-text">
-        <p>I am an <strong>Electronics &amp; Instrumentation Engineering student</strong> at Government College of Technology, Coimbatore, with a strong foundation in industrial automation built through hands-on projects and real-world internships.</p>
-        <p>My core expertise lies in <strong>PLC programming using TIA Portal (Siemens), ISP Soft (Delta), and RS Logix (Rockwell)</strong>, covering Ladder Logic design, HMI development, and SCADA integration for industrial control systems.</p>
-        <p>My industrial exposure includes internships at <strong>Mettur Thermal Power Station</strong> (SCADA and power plant automation), <strong>Titan Company Ltd</strong> (manufacturing automation and panel wiring), and <strong>SKMT Electronics</strong> (sensor integration and robotic control).</p>
-        <p>I have designed and deployed projects including a <strong>Multistage Elevator Kit, Smart Water Tank Monitoring System, Traffic Signal PLC System, IoT Smart Parking System</strong>, and a Generator Auto Start System — all programmed with industrial-grade safety logic.</p>
-        <p>A proactive leader outside the lab — I served as <strong>Student Placement Coordinator, Director of Events (IEEE)</strong>, and Solar Member at GCT IEEE Student Branch, demonstrating strong communication and organizational skills.</p>
+        <p>I'm an <strong>Electronics &amp; Instrumentation student</strong> at Government College of Technology, Coimbatore, with a strong foundation in industrial automation built through hands-on projects.</p>
+        <p>My core expertise lies in <strong>PLC programming using TIA Portal (Siemens), ISP Soft (Delta), and RS Logix (Rockwell)</strong>, covering Ladder Logic design, HMI development.</p>
         <p>I am a <strong>UAE job-ready professional</strong> with a goal-oriented mindset and the technical skills to contribute immediately to industrial automation teams in the Gulf region. Diploma: <strong>92.2%</strong> · Currently pursuing B.E.</p>
       </div>
       <div class="stats-grid">
@@ -1429,7 +1438,7 @@ footer span { color:var(--accent); }
             </div>
             <div class="proj-name-bar">
               <h3>PLC Based Multistage Elevator Kit</h3>
-              <p>3-floor elevator trainer kit using Siemens PLC and HMI with full safety interlock logic.</p>
+              <p>3-floor elevator trainer kit using Siemens PLC with full safety interlock logic.</p>
               <button class="proj-cta">[ View Details → ]</button>
             </div>
           </div>
@@ -1443,8 +1452,8 @@ footer span { color:var(--accent); }
               <div class="proj-img-placeholder" style="background:linear-gradient(135deg,#1a1200,#2e2000);">⚡</div>
             </div>
             <div class="proj-name-bar">
-              <h3>Generator Auto Start System</h3>
-              <p>PLC relay logic for automatic generator startup on power failure with safety interlocks.</p>
+              <h3>Generator Auto Start/Stop System</h3>
+              <p>HMI & PLC relay logic for automatic generator startup on power failure with safety interlocks.</p>
               <button class="proj-cta">[ View Details → ]</button>
             </div>
           </div>
@@ -1458,7 +1467,7 @@ footer span { color:var(--accent); }
               <div class="proj-img-placeholder" style="background:linear-gradient(135deg,#0a1e2e,#0d2e42);">💧</div>
             </div>
             <div class="proj-name-bar">
-              <h3>Smart Water Tank Level Monitoring</h3>
+              <h3>Batch Process Tank</h3>
               <p>Automated level control with overflow prevention and dry-run pump protection.</p>
               <button class="proj-cta">[ View Details → ]</button>
             </div>
