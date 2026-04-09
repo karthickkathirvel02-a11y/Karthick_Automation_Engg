@@ -748,9 +748,10 @@ footer span { color:var(--accent); }
         <span class="modal-tag">Safety Interlocks</span>
       </div>
       <p class="modal-desc">
-        <strong>Objective:</strong> Build a functional 3-floor elevator trainer kit demonstrating complete elevator control logic applicable to real industrial lift systems.<br><br>
+        <strong>Objective:</strong> Design & developement of universal PLC-based elevator trainer kit with complete hardware fabrication and flexible I/O interfacing with safe and reliable control system using relay logic and fail-safe circuits<br><br>
         <strong>Tools Used:</strong> Siemens S7-1200 PLC, TIA Portal V17, HMI panel (Diascreen), Ladder Logic programming.<br><br>
-        <strong>Working Logic:</strong> Full elevator logic including floor call handling, floor selection via HMI push buttons, automatic door open/close sequences with delay timers, and comprehensive safety interlocks. Features include: level-by-level movement control, anti-collision safety logic, real-time floor indication on HMI, emergency stop functionality, and overload protection simulation.
+        <strong>Working Logic:</strong> The system operates based on I/O commands where user inputs from floor and cabin switches are processed through the PLC to control lift and door outputs. Input signals are stored using memory bits, and based on sensor feedback from proximity sensors, the PLC executes directional movement (UP/DOWN) and stops the lift at the required floor. The outputs are driven through relay circuits, which control the lift motor and door mechanism.<br><br>
+The hardware circuit includes relay logic for signal interfacing and motor control, along with a fail-safe protection system using limit switches and interlocks. These circuits ensure that even if the PLC output fails or gives incorrect signals, the system remains safe by preventing over-travel and restricting operation during unsafe conditions such as door movement.
       </p>
       <div class="modal-actions">
         <a href="https://drive.google.com/drive/folders/18onCyxzig6pQIQ2wKCL4ZrCSzBepvD6l" target="_blank" class="btn-modal-primary">▶ View Project / Demo</a>
@@ -760,7 +761,7 @@ footer span { color:var(--accent); }
   </div>
 </div>
 
-<!-- MODAL PROJ 2 — Water Tank -->
+<!-- MODAL PROJ 2 — Batch process -->
 <div class="modal-overlay" id="modal-proj-2">
   <div class="modal-box">
     <button class="modal-close" onclick="closeModal('modal-proj-2')">✕</button>
@@ -854,8 +855,8 @@ After the reactor tank is filled, a preset time delay is applied during which th
       </div>
       <p class="modal-desc">
         <strong>Objective:</strong> Develop a smart city-ready parking management system with real-time slot detection, cloud connectivity, and automated gate control.<br><br>
-        <strong>Tools Used:</strong> ESP8266 Wi-Fi module, IR proximity sensors, servo motors for barriers, LED display panel, cloud dashboard via Wi-Fi.<br><br>
-        <strong>Working Logic:</strong> IR sensors detect vehicle presence at entry/exit gates and at each parking slot. On detection, the ESP8266 triggers the servo motor to raise the barrier. Slot availability is tracked in real time and transmitted to a cloud dashboard via Wi-Fi. LED indicators show occupied/free status at each slot. The system prevents entry when all slots are full.
+        <strong>Tools Used:</strong> ESP8266 Wi-Fi module, IR proximity sensors, servo motors for barriers, LCD display, BLYNK cloud dashboard via Wi-Fi.<br><br>
+        <strong>Working Logic:</strong> IR sensors detect vehicle presence at entry/exit gates and at each parking slot. On detection, the ESP8266 triggers the servo motor to raise the barrier. Slot availability is tracked in real time and transmitted to a BLYNK cloud dashboard via Wi-Fi. LCD display show occupied/free status at each slot. The system prevents entry when all slots are full.
       </p>
       <div class="modal-actions">
         <a href="https://drive.google.com/drive/folders/10YtGG__zYh3MlH2VPkReZ9KqUV8cy_Wo" target="_blank" class="btn-modal-primary">▶ View Project / Demo</a>
@@ -904,9 +905,10 @@ After the reactor tank is filled, a preset time delay is applied during which th
         <span class="modal-tag">4-Way Intersection</span>
       </div>
       <p class="modal-desc">
-        <strong>Objective:</strong> PLC-controlled traffic signal management for a 4-road intersection with intelligent priority and emergency override capability.<br><br>
-        <strong>Tools Used:</strong> Siemens PLC, TIA Portal, Ladder Logic, HMI panel with manual override buttons.<br><br>
-        <strong>Working Logic:</strong> Programmable green/yellow/red timing for all four lanes using TON timer blocks. Emergency vehicle detection override provides priority clearance with instant phase skip. HMI enables manual override during incidents. Fault-detection logic prevents conflicting green signals across opposing lanes.
+        <strong>Objective:</strong> PLC-controlled traffic signal management for a 4-road intersection with pedestrain crossing and intelligent priority and emergency override capability.<br><br>
+        <strong>Tools Used:</strong> ISPsoft (Delta PLC software), Ladder Logic, HMI Screen with manual override buttons.<br><br>
+        <strong>Working Logic:</strong> Programmable green/yellow/red timing for all four lanes using TON timer blocks. Emergency vehicle detection override provides priority clearance with instant phase skip. HMI enables manual override during incidents. Fault-detection logic prevents conflicting green signals across opposing lanes.<br><br> 
+        This system also Hazard blinker option which is used during night times as the yellow signal flickers and For each cycle of 4 foads the pedestrain crossing is allowed for a preset time. 
       </p>
       <div class="modal-actions">
         <a href="https://drive.google.com/drive/folders/1EJeQkWvcb7IynEcHp6pFd194IcupJ9Mx" target="_blank" class="btn-modal-primary">▶ View Project / Demo</a>
@@ -1286,7 +1288,7 @@ Abnormal Conditions<br><br>
       <h1 class="hero-title"><span class="hl">Karthick K</span></h1>
       <div class="hero-subtitle">
         <span>PLC Automation Engineer</span> | HMI &amp; SCADA Developer<br>
-        Industrial Control Systems Specialist
+       Electrical Engineer.
       </div>
       <p class="hero-summary">
         <strong>Electronics &amp; Instrumentation Engineering</strong> student with Electrical knowledge and hands-on experince in PLC programming, HMI development, and industrial automation.<br>
@@ -1294,8 +1296,8 @@ Abnormal Conditions<br><br>
       </p>
       <div class="hero-uae-badge">Open to Work — UAE</div>
       <div class="hero-btns">
-        <a href=KARTHICK K.pdf.pdf download class="btn btn-primary">⬇ Download Resume</a>
-        <a href="#contact" class="btn btn-outline">Contact Me →</a>
+        <a href=KARTHICK K.pdf.pdf download class="btn btn-primary">Download Resume</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
       </div>
     </div>
 
@@ -1344,7 +1346,7 @@ Abnormal Conditions<br><br>
             onload="this.style.display='block'; document.getElementById('heroPlaceholder').style.display='none';"/>
           <div class="avatar-placeholder" id="heroPlaceholder">
             <div class="avatar-initials">KK</div>
-            <div class="avatar-role">Automation Eng.</div>
+            <div class="avatar-role">Automation Engg.</div>
           </div>
         </div>
       </div>
@@ -1372,9 +1374,8 @@ Abnormal Conditions<br><br>
         </div>
       </div>
       <div class="about-text">
-        <p>I'm an <strong>Electronics &amp; Instrumentation student</strong> at Government College of Technology, Coimbatore, with a strong foundation in industrial automation built through hands-on projects.</p>
-        <p>My core expertise lies in <strong>PLC programming using TIA Portal (Siemens), ISP Soft (Delta), and RS Logix (Rockwell)</strong>, covering Ladder Logic design, HMI development.</p>
-        <p>I am a <strong>UAE job-ready professional</strong> with a goal-oriented mindset and the technical skills to contribute immediately to industrial automation teams in the Gulf region. Diploma: <strong>92.2%</strong> · Currently pursuing B.E.</p>
+        <p>I'm an <strong>Electronics &amp; Instrumentation student</strong> at Government College of Technology, Coimbatore, with a strong foundation in industrial automation built through hands-on projects. My core expertise lies in <strong>PLC programming using TIA Portal (Siemens), ISP Soft (Delta), and RS Logix (Rockwell)</strong>, covering Ladder Logic design, HMI development.</p>
+        <p>I am a <strong>UAE job-ready professional</strong> with a goal-oriented mindset and the technical skills to contribute immediately to industrial automation teams in the Gulf region.</p>
       </div>
       <div class="stats-grid">
         <div class="stat-card"><div class="stat-num">5+</div><div class="stat-lbl">Projects Completed</div></div>
@@ -1441,8 +1442,8 @@ Abnormal Conditions<br><br>
             </div>
             <div class="proj-name-bar">
               <h3>PLC Based Multistage Elevator Kit</h3>
-              <p>3-floor elevator trainer kit using Siemens PLC with full safety interlock logic.</p>
-              <button class="proj-cta">[ View Details → ]</button>
+              <p>3-floor elevator trainer kit using Siemens PLC with full safety interlock & Fail safe protection.</p>
+              <button class="proj-cta">[ View Details ]</button>
             </div>
           </div>
 
@@ -1457,7 +1458,7 @@ Abnormal Conditions<br><br>
             <div class="proj-name-bar">
               <h3>Generator Auto Start/Stop System</h3>
               <p>HMI & PLC relay logic for automatic generator startup on power failure with safety interlocks.</p>
-              <button class="proj-cta">[ View Details → ]</button>
+              <button class="proj-cta">[ View Details ]</button>
             </div>
           </div>
 
@@ -1471,8 +1472,8 @@ Abnormal Conditions<br><br>
             </div>
             <div class="proj-name-bar">
               <h3>Batch Process Tank</h3>
-              <p>Automated level control with overflow prevention and dry-run pump protection.</p>
-              <button class="proj-cta">[ View Details → ]</button>
+              <p>Automated Reactor Tank for Batch Process operation with pump dry-run protection.</p>
+              <button class="proj-cta">[ View Details ]</button>
             </div>
           </div>
 
@@ -1486,8 +1487,8 @@ Abnormal Conditions<br><br>
             </div>
             <div class="proj-name-bar">
               <h3>Traffic Signal PLC System</h3>
-              <p>4-way intersection control with emergency vehicle priority and HMI override.</p>
-              <button class="proj-cta">[ View Details → ]</button>
+              <p>4-way intersection control with emergency vehicle priority and override through HMI.</p>
+              <button class="proj-cta">[ View Details ]</button>
             </div>
           </div>
 
@@ -1502,7 +1503,7 @@ Abnormal Conditions<br><br>
             <div class="proj-name-bar">
               <h3>IoT Smart Parking System</h3>
               <p>ESP8266-based real-time parking management with cloud dashboard and servo barrier.</p>
-              <button class="proj-cta">[ View Details → ]</button>
+              <button class="proj-cta">[ View Details ]</button>
             </div>
           </div>
 
@@ -1528,22 +1529,22 @@ Abnormal Conditions<br><br>
           <div class="exp-card" onclick="openModal('modal-exp-1')">
             <span class="badge">Pre-Apprentice Trainee</span>
             <h3>Titan Company Ltd</h3>
-            <p>Industrial electrical systems and manufacturing automation. Hands-on work with control panels, relay logic, and real-time production monitoring.</p>
-            <div class="exp-click-hint">[ ↗ Click for full details ]</div>
+            <p>Industrial electrical systems and manufacturing automation. Assisted on work with control panels, relay logic, and real-time production monitoring.</p>
+            <div class="exp-click-hint">[Click for full details]</div>
           </div>
 
           <div class="exp-card" onclick="openModal('modal-exp-2')">
             <span class="badge">Intern</span>
             <h3>Mettur Thermal Power Station</h3>
             <p>Live exposure to power generation, SCADA systems, boiler and turbine operations, and high-voltage industrial safety protocols.</p>
-            <div class="exp-click-hint">[ ↗ Click for full details ]</div>
+            <div class="exp-click-hint">[Click for full details]</div>
           </div>
 
           <div class="exp-card" onclick="openModal('modal-exp-3')">
             <span class="badge">Intern</span>
             <h3>SKMT Electronics</h3>
             <p>Industrial automation, sensor integration, basic robotics, and control circuit assembly. Strengthened practical troubleshooting skills.</p>
-            <div class="exp-click-hint">[ ↗ Click for full details ]</div>
+            <div class="exp-click-hint">[Click for full details]</div>
           </div>
 
         </div>
@@ -1590,28 +1591,28 @@ Abnormal Conditions<br><br>
             <span class="badge">College</span>
             <h3>Student Placement Coordinator</h3>
             <p>Connected students with recruiters, organized campus drives, and provided career guidance. Developed leadership and communication skills.</p>
-            <div class="exp-click-hint">[ ↗ Click for full details ]</div>
+            <div class="exp-click-hint">[Click for full details]</div>
           </div>
 
           <div class="exp-card" onclick="openModal('modal-act-2')">
             <span class="badge">IEEE</span>
             <h3>Solar Member – GCT IEEE SB‑81571</h3>
             <p>Contributed to solar and renewable energy initiatives. Gained exposure to sustainable technologies and clean energy systems.</p>
-            <div class="exp-click-hint">[ ↗ Click for full details ]</div>
+            <div class="exp-click-hint">[Click for full details]</div>
           </div>
 
           <div class="exp-card" onclick="openModal('modal-act-3')">
             <span class="badge">IEEE</span>
             <h3>Director of Events – GCT IEEE SB‑81571</h3>
             <p>Led planning and execution of workshops and technical events. Developed organizational, leadership, and event management skills.</p>
-            <div class="exp-click-hint">[ ↗ Click for full details ]</div>
+            <div class="exp-click-hint">[Click for full details]</div>
           </div>
 
           <div class="exp-card" onclick="openModal('modal-act-4')">
             <span class="badge">Club</span>
             <h3>Director of Photography – Y's Club of GCT</h3>
             <p>Managed photography coverage for club events. Strengthened creativity, visual storytelling, and media production skills.</p>
-            <div class="exp-click-hint">[ ↗ Click for full details ]</div>
+            <div class="exp-click-hint">[Click for full details]</div>
           </div>
 
         </div>
