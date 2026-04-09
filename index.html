@@ -799,9 +799,12 @@ footer span { color:var(--accent); }
         <span class="modal-tag">Auto Start/Stop</span>
       </div>
       <p class="modal-desc">
-        <strong>Objective:</strong> Automate water tank level management to replicate real-world industrial liquid control with safety alarms and remote monitoring.<br><br>
-        <strong>Tools Used:</strong> Siemens PLC, TIA Portal, HMI panel, float and capacitive level sensors, 3-phase pump simulation.<br><br>
-        <strong>Working Logic:</strong> Level sensors continuously monitor water levels. At the low-level threshold, the pump auto-starts; at the high-level threshold, the pump auto-stops. Overflow prevention triggers a critical alarm on HMI. Dry-run protection engages a low-level cutoff to protect the pump motor. The HMI displays animated tank fill status, pump state, and alarm banners in real time.
+        <strong>Objective:</strong> Automatic Batch Reactor Process tank operation.<br><br>
+        <strong>Tools Used:</strong> Siemens S7 - 1200 PLC Trainer Kit, TIA Portal V20, Batch Reactor Tank Kit.<br><br>
+        <strong>Working Logic:</strong>A Batch Process Reactor System is used to mix and heat two liquids in equal proportions and subsequently fill the processed liquid into vessels transported by a conveyor. The entire operation is automatic and continuous.<br><br>
+The system consists of three process tanks. The first two tanks store raw liquids, while the third tank functions as the reactor tank. Each tank is equipped with low-level and high-level sensors to monitor liquid levels.<br><br>
+Solenoid Valves SV1 and SV2, connected to the first and second process tanks respectively, are used to transfer liquids into the reactor tank. These valves open simultaneously to ensure equal-rate filling and automatically close when the high-level sensor of the reactor tank is activated.<br><br>
+After the reactor tank is filled, a preset time delay is applied during which the liquid is heated and mixed. Upon completion of the heating and mixing process, the processed liquid is discharged into vessels placed on a conveyor system. The conveyor movement and filling operation are synchronized to ensure accurate and efficient filling.
       </p>
       <div class="modal-actions">
         <a href="https://drive.google.com/drive/folders/1S20QmdNV1Q_RtkTp-H629PQScn4jllmn" target="_blank" class="btn-modal-primary">▶ View Project / Demo</a>
@@ -954,14 +957,14 @@ footer span { color:var(--accent); }
       <p class="modal-desc">
         <strong>Objective:</strong> Objective: Ensure uninterrupted power supply.<br><br>
 Initial Conditions<br><br>
-• Mains supply present<br<br>
+• Mains supply present<br><br>
 • Generator stopped<br><br>
 Abnormal Conditions<br><br>
 • Overspeed → trip<br><br>
 • Low oil pressure → shutdown<br><br>
         • Electrical over load → trip <br><br>
          • High Temperature → trip<br><br>
-        <strong>Tools Used:</strong> Siemens PLC, relay logic, Auto Transfer Switch (ATS), voltage monitoring relay, HMI panel with alarm management.<br><br>
+        <strong>Tools Used:</strong> Delta PLC Software (ISPsoft), relay logic, HMI Screen with alarm management and Fault Indication.<br><br>
         <strong>Working Logic:</strong> Normal Operation Sequence<br><br>
 1. Mains failure detected<br><br>
 2. Generator starts after delay<br><br>
@@ -970,7 +973,7 @@ Abnormal Conditions<br><br>
 5. Mains restored → cool down → generator stops.
       </p>
       <div class="modal-actions">
-        <a href="#contact" class="btn-modal-primary" onclick="closeModal('modal-proj-5')">▶ Contact for Details</a>
+        <a href="https://drive.google.com/drive/folders/1Z-Xn9MjBis6yzNGv5uImlcYa_IyMCxUF" target="_blank" class="btn-modal-primary">▶ View Project / Demo</a>
         <button class="btn-modal-outline" onclick="closeModal('modal-proj-5')">Close</button>
       </div>
     </div>
